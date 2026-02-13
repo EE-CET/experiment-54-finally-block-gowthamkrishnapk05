@@ -24,7 +24,7 @@ public class FinallyDemo {
                 }
                 catch(ArithmeticException e)
                 {
-                        System.out.println("Divide by zero error");
+                        System.out.println("Error: / by zero");
                 }
                 finally
                 {
