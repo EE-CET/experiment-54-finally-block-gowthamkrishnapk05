@@ -13,5 +13,23 @@ public class FinallyDemo {
         
         // TODO: finally block
         // Print "Finally block executed"
+    public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+                int num1 = sc.nextInt();
+                int num2 = sc.nextInt();
+                try
+                {
+                        int quotient = num1/num2;
+                        System.out.println("Result: "+quotient);
+                }
+                catch(ArithmeticException e)
+                {
+                        System.out.println("Error: / by zero");
+                }
+                finally
+                {
+                    System.out.println("Finally block executed");
+                }
+        }
     }
-}
+
